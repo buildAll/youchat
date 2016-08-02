@@ -100,9 +100,10 @@
 
 	socket.on('show message', function(msg) {
 	    var li = document.createElement('li');
+	    var nickname = msg.nickname || 'unknown';
 
 
-	    li.innerHTML = msg.nickname + ': ' + msg.text;
+	    li.innerHTML = nickname + ': ' + msg.text;
 
 	    if (msg.nickname === document.getElementById('nickname').value) {
 	        li.style.textAlign = 'right';
