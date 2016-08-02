@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouChat</title>
+    <link rel="stylesheet" href="http://localhost:8080/static/css/style.css">
+</head>
+<body>
+    <div class="message-area">
+        <ul id="message-list">
+        </ul>
+    </div>
+    <div class="input-area">
+        <input class="chat-input" type="text">
+        <span class="btn">SEND</span>
+    </div>
+    <input type="hidden" id="nickname">
+    <script src="http://localhost:8080/node_modules/socket.io-client/socket.io.js"></script>
+    <script src="http://localhost:8080/static/dist/bundle.js"></script>
+</body>
+</html>
